@@ -140,21 +140,21 @@ public class Board {
     public static void main(String[] args) {
 
 //        int[][] grid = { {1, 2, 11, 4}, {5, 14, 7, 9}, {8, 10, 3, 12}, {13, 6, 15, 0} };
-        int[][] grid = { {0, 1, 3}, {4, 2, 5}, {7, 8, 6} };
-        Board brd = new Board(grid);
+//         int[][] grid = { {0, 1, 3}, {4, 2, 5}, {7, 8, 6} };
+//         Board brd = new Board(grid);
 //        Board twin = brd.twin();
-        Iterable<Board> itr = brd.neighbors();
-        StdOut.println("Original: " + brd);
+//         Iterable<Board> itr = brd.neighbors();
+//         StdOut.println("Original: " + brd);
 
 //        StdOut.println(brd.dimension());
-        StdOut.println(brd.hamming());
+//         StdOut.println(brd.hamming());
 //        StdOut.println(brd.isGoal());
-        StdOut.println(brd.manhattan());
-        for (Board x : itr) {
-            StdOut.println(x.toString());
-            StdOut.println(x.hamming());
-            StdOut.println(x.manhattan());
-
+//         StdOut.println(brd.manhattan());
+//         for (Board x : itr) {
+//             StdOut.println(x.toString());
+//             StdOut.println(x.hamming());
+//             StdOut.println(x.manhattan());
+// 
         }
 //        StdOut.println(brd.isGoal());
 //        StdOut.println(brd.neighbors());
