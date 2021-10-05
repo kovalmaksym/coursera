@@ -96,14 +96,13 @@ public class Solver {
     // test client (see below)
     public static void main(String[] args) {
 
-        // create initial board from file
-        int[][] tiles = { {1, 2, 3}, {4, 5, 0}, {7, 8, 6} };
-//        In in = new In("/home/user/IdeaProjects/coursera_tasks/src/input.txt");
-//        int n = in.readInt();
-//        int[][] tiles = new int[n][n];
-//        for (int i = 0; i < n; i++)
-//            for (int j = 0; j < n; j++)
-//                tiles[i][j] = in.readInt();
+            // create initial board from file
+        In in = new In(args[0]);
+        int n = in.readInt();
+        int[][] tiles = new int[n][n];
+        for (int i = 0; i < n; i++)
+            for (int j = 0; j < n; j++)
+                tiles[i][j] = in.readInt();
         Board initial = new Board(tiles);
 
         // solve the puzzle
@@ -117,5 +116,6 @@ public class Solver {
             for (Board board : solver.solution())
                 StdOut.println(board);
         }
+        
     }
 }
